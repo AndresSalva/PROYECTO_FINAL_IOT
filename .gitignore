@@ -1,5 +1,5 @@
-# Ignorar todo dentro de la carpeta 'secrets'
-credenciales/*
+credenciales/
 
-# Pero no ignorar el archivo de plantilla
-!credenciales/lambda_function.py
+lambda_smart_plant_alexa/*
+
+!lambda_smart_plant_alexa/lambda_function.py
