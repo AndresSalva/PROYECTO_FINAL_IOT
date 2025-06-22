@@ -1,1 +1,5 @@
-credenciales/
+# Ignorar todo dentro de la carpeta 'secrets'
+credenciales/*
+
+# Pero no ignorar el archivo de plantilla
+!credenciales/lambda_function.py
