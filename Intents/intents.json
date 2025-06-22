@@ -1,0 +1,184 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "smart plant",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PlantStatusIntent",
+                    "slots": [],
+                    "samples": [
+                        "dame un resumen",
+                        "dime el estado general",
+                        "muéstrame el estado actual de mi planta",
+                        "dime el estado de mi planta",
+                        "cómo está mi planta",
+                        "cuál es el estado de mi planta",
+                        "qué tal está la planta",
+                        "informame el estado de mi planta",
+                        "como se siente mi planta",
+                        "estado de animo de mi planta",
+                        "sentimientos actual de mi planta",
+                        "animo actual de mi planta",
+                        "cual es estado de animo en el que se encuentra mi planta",
+                        "cual es el estado de animo actual de mi planta"
+                    ]
+                },
+                {
+                    "name": "GetHumidityIntent",
+                    "slots": [],
+                    "samples": [
+                        "qué humedad tiene mi planta",
+                        "dime la humedad",
+                        "necesita agua mi planta",
+                        "cómo está de humedad",
+                        "está seca la tierra",
+                        "cuál es el porcentaje de humedad",
+                        "recuerdame regar la planta",
+                        "puedes decirme el nivel de humedad",
+                        "cual es el nivel de humedad de mi planta",
+                        "con que porcentaje de humedad se encuentra mi planta"
+                    ]
+                },
+                {
+                    "name": "GetLightStatusIntent",
+                    "slots": [],
+                    "samples": [
+                        "cuál es el nivel de luz",
+                        "cómo está la luz de mi planta",
+                        "hay suficiente luz",
+                        "hay sol",
+                        "está oscuro",
+                        "verifica la luz de la planta",
+                        "puedes decirme el nivel de iluminacion",
+                        "cual es el nivel de luz con el que se encuentra mi planta"
+                    ]
+                },
+                {
+                    "name": "SetDisplayModeIntent",
+                    "slots": [
+                        {
+                            "name": "mode",
+                            "type": "DisplayModeType"
+                        }
+                    ],
+                    "samples": [
+                        "cambia a modo {mode}",
+                        "pon el modo {mode}",
+                        "activa el modo {mode}",
+                        "quiero ver la {mode}"
+                    ]
+                },
+                {
+                    "name": "SetDisplayPowerIntent",
+                    "slots": [
+                        {
+                            "name": "power",
+                            "type": "DisplayPowerType"
+                        }
+                    ],
+                    "samples": [
+                        "{power} la pantalla",
+                        "{power} el display"
+                    ]
+                },
+                {
+                    "name": "CloseSkillIntent",
+                    "slots": [],
+                    "samples": [
+                        "cierra smart plant",
+                        "salir",
+                        "terminar",
+                        "adiós"
+                    ]
+                },
+                {
+                    "name": "SetDisplayTimerIntent",
+                    "slots": [
+                        {
+                            "name": "duration",
+                            "type": "AMAZON.DURATION"
+                        }
+                    ],
+                    "samples": [
+                        "apaga la pantalla en {duration}",
+                        "desactiva la pantalla en {duration}",
+                        "pon un temporizador para la pantalla de {duration}",
+                        "quiero que apagues la pantalla en {duration}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DisplayModeType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Info",
+                                "synonyms": [
+                                    "información",
+                                    "datos",
+                                    "estadísticas"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Face",
+                                "synonyms": [
+                                    "cara",
+                                    "carita",
+                                    "animación",
+                                    "normal"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DisplayPowerType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ON",
+                                "synonyms": [
+                                    "enciende",
+                                    "activa",
+                                    "prende"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "OFF",
+                                "synonyms": [
+                                    "apaga",
+                                    "desactiva"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
