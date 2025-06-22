@@ -206,7 +206,7 @@ void SmartPlant::reportState(const JsonObject* keysToClear) {
 }
 
 
-// --- Métodos de Ayuda y Control (sin cambios) ---
+// --- Métodos de Ayuda y Control ---
 
 MoistureStatus SmartPlant::determineMoistureStatus(int percent) const {
     // Esta lógica de histéresis es correcta para evitar cambios rápidos
