@@ -228,7 +228,7 @@ class GetHumidityIntentHandler(AbstractRequestHandler):
 
 class GetLightStatusIntentHandler(AbstractRequestHandler):
     """Handler para obtener solo el estado de la luz."""
-    def can_handle(self, handler_input): return ask_utils.is_intent_name("GetLightStatusIntentHandler")(handler_input)
+    def can_handle(self, handler_input): return ask_utils.is_intent_name("GetLightStatusIntent")(handler_input)
     def handle(self, handler_input):
         _, reported, error_message = _get_plant_shadow(handler_input)
         if error_message: return handler_input.response_builder.speak(error_message).ask("").response
