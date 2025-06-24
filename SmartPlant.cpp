@@ -85,7 +85,11 @@ void SmartPlant::loop() {
     LightStatus currentLightStatus = lightSensor.getStatus(rawLightValue);
     int humidityPercent = soilSensor.getMoisturePercentage(rawMoistureValue);
     MoistureStatus currentMoistureStatus = determineMoistureStatus(humidityPercent);
-
+    // --- Depuración CORRECTA ---
+    Serial.print("Luz: ");
+    Serial.print(rawLightValue);
+    Serial.print(" | Humedad: ");
+    Serial.println(rawMoistureValue); // println al final para el salto de línea
     // --- Control del display ---
     if (isDisplayOn) {
         if (currentDisplayMode == "Info") {
